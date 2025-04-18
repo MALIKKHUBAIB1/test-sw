@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="manifest" href="maiifest.json" />
+
+    <title>Service Worker Demo</title>
+    <style>
+      nav {
+        background-color: #4caf50;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 24px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 16px;
+        border: 2px solid white;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Service Worker Demo</h1>
+      <a href="/form.html">Form</a>
+    </nav>
+
+    <div class="content">
+      <div class="card">
+        <h2>What is a Service Worker?</h2>
+        <p>
+          A Service Worker is a JavaScript file that runs in the background of
+          your browser and can intercept network requests, cache resources, and
+          enable offline functionality.
+        </p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+
+      <div class="card">
+        <h2>Try It Offline</h2>
+        <p>
+          Enable the service worker to make this page work offline. Refresh the
+          page after enabling.
+        </p>
+        <button class="button" id="btn2">load Data</button>
+      </div>
+
+      <!-- Product list area -->
+      <div id="product-list"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Service Worker Demo. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

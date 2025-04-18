@@ -1,0 +1,19 @@
+{
+  "name": "test-sw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "idb": "^8.0.2"
+  },
+  "devDependencies": {
+    "vite": "^6.2.6"
+  }
+}
