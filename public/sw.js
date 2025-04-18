@@ -3,7 +3,7 @@ import {
   delteFromDB,
   getFormData,
   insertProduct,
-} from "./utility/Indexdb";
+} from "./Indexdb";
 
 const STATIC_FILES = [
   "index.html",

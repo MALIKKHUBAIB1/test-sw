@@ -19,15 +19,15 @@ if ("Notification" in window && Notification.permission !== "granted") {
   });
 }
 
-self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches
-      .open(cahcheName)
-      .then((cache) => {
-        return cache.addAll(cacheStaticFiles);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-  );
-});
+// self.addEventListener("install", (event) => {
+//   event.waitUntil(
+//     caches
+//       .open(cahcheName)
+//       .then((cache) => {
+//         return cache.addAll(cacheStaticFiles);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//       })
+//   );
+// });
