@@ -3,41 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/test-sw/index/index.css" />
-    <link rel="manifest" href="/test-sw/index/manifest.json" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
+    <!-- Update these paths -->
+    <link rel="stylesheet" href="index-C4I53H31.css" />
+    <link rel="manifest" href="manifest-CWIJp84P.json" />
     <title>Service Worker Demo</title>
-    <style>
-      nav {
-        background-color: #4caf50;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 24px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      nav h1 {
-        margin: 0;
-        font-size: 24px;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 16px;
-        border: 2px solid white;
-        border-radius: 4px;
-        transition: background-color 0.3s ease;
-      }
-
-      nav a:hover {
-        background-color: white;
-        color: #4caf50;
-      }
-    </style>
   </head>
   <body>
     <nav>
@@ -64,16 +35,14 @@
         </p>
         <button class="button" id="btn2">loads Data</button>
       </div>
-
-      <!-- Product list area -->
-      <div id="product-list"></div>
     </div>
 
     <footer>
       <p>&copy; 2025 Service Worker Demo. All rights reserved.</p>
     </footer>
 
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./app.js"></script>
+    <!-- Update script paths -->
+    <script type="module" src="index-CYkGMGGV.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
