@@ -11,6 +11,7 @@ const STATIC_FILES = [
   "index.js",
   "sw.js",
   "offline.html",
+  "manifest.json"
 ];
 const STATIC_CACHE_NAME = "static-v5";
 const DYNAMIC_CACHE_NAME = "products";

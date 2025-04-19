@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/assets/manifest-DnY5rYlG.json" />
+    <link rel="stylesheet" href="/test-sw/index/index.css" />
+    <link rel="manifest" href="/test-sw/index/manifest.json" />
 
     <title>Service Worker Demo</title>
     <style>
@@ -37,7 +38,6 @@
         color: #4caf50;
       }
     </style>
-    <link rel="stylesheet" crossorigin href="/assets/index-C4I53H31.css">
   </head>
   <body>
     <nav>
@@ -62,7 +62,7 @@
           Enable the service worker to make this page work offline. Refresh the
           page after enabling.
         </p>
-        <button class="button" id="btn2">load Data</button>
+        <button class="button" id="btn2">loads Data</button>
       </div>
 
       <!-- Product list area -->
@@ -73,7 +73,7 @@
       <p>&copy; 2025 Service Worker Demo. All rights reserved.</p>
     </footer>
 
-    <script src="./index.js"></script>
-    <script src="./app.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

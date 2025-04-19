@@ -1,11 +1,11 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/sw.js", { type: "module" })
+    .register("/test-sw/sw.js", { type: "module" })
     .then(() => {
-      console.log("register successfully");
+      console.log("✅ Service Worker registered successfully");
     })
     .catch((err) => {
-      console.log("error", err);
+      console.error("❌ Service Worker registration failed:", err);
     });
 }
 
